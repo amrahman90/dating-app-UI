@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
-import { AuthService } from '../_services/auth.service';
-import { AlertConfig } from 'ngx-bootstrap/alert/alert.config';
-import { AlertifyService } from '../_services/alertify.service';
+
+import { AlertifyService } from '../_services/alertify/alertify.service';
+import { AuthService } from '../_services/auth/auth.service';
 
 @Injectable()
 export class AuthGuard implements CanActivate {
@@ -16,7 +16,7 @@ export class AuthGuard implements CanActivate {
     }
 
     this.alertify.error('You need to be logged in to access this area');
-    this.router.navigate(['/home']);
+    this.router.navigateByUrl('/login');
     return false;
   }
 }
