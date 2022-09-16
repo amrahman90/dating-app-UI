@@ -24,7 +24,7 @@
     "@angular/router": "^5.2.11",
     "@auth0/angular-jwt": "^1.2.0",
     "alertifyjs": "^1.11.1",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "bootswatch": "^3.3.7",
     "core-js": "^2.5.7",
     "express": "^4.16.3",
